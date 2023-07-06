@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/js/bootstrap.min.css">
+    <title>PIZZA HUT</title>
+    <body background="/img/pizza.jpg"></body>
+</head>
+<body onload="calcular() " class="text-center" img src="/img/pizza.jpg width="175" alt="">>
+   
+    
+    <h1 class="bg-dark text-white m-5">PIZZA HUT</h1>
+    <img src="/img/logo-removebg-preview.png"  width="175" alt="">
+    <div class="card m-5">
+    <h1 class=" bg-warning text-white ">TAMAÑO</h1>
+    <select class="form-control "name="tamaño" onchange="calcular()" id="tamaño">
+        <option value="individual">INDIVIDUAL</option>
+        <option value="grande">GRANDE</option>
+        <option value="familiar">FAMILIAR</option>
+        <option value="jumbo">JUMBO</option>
+
+    </select>
+    <div id="img"></div>
+
+    <h1 class="bg-danger text-white">CANTIDAD</h1>
+    <input class="form-control "type="range" id="cantidad" value="0" min="1" max="10">
+    <label class="h2 "id="vcan">1</label>
+    
+    
+    <div class="m-2 ">
+      <h1 class="bg-info text-white">EXTRA</h1>
+    <input type="checkbox" name="m" id="refresco" class="form-check-input p-2 " onchange="calcular()">REFRESCO<br>
+    <input type="checkbox" name="m" id="alitas" class="form-check-input" onchange="calcular()" >ALITAS<br>
+    <input type="checkbox" name="m" id="papas" class="form-check-input" onchange="calcular()" >PAPAS<br>
+    <h1 class="bg-secondary text-white">INGRDEINTES</h1>
+    <input type="radio" name="m" id="uno" class="form-check-input p-2 " onchange="calcular()">INGREDIENTE(1)<br>
+    <input type="radio" name="m" id="dos" class="form-check-input" onchange="calcular()" >INGREDIENTE(2)<br>
+    <input type="radio" name="m" id="tres" class="form-check-input" onchange="calcular()" >INGREDIENTE(3)<br>
+    <div class="bg-warning text-white h1 "id="res">TOTAL: $ 0.00 MXN</div>
+
+    <script src="bootstrap.min.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
